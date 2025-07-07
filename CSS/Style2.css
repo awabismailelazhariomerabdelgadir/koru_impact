@@ -1,0 +1,96 @@
+.div01{
+    background-repeat: no-repeat;
+    background-image: url(../img/Koru_-2400px-06-crop.jpg);
+    height: 80px;
+}
+.div01 h1{
+    color: aliceblue;
+    padding-top: 8px;
+}
+.div01 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.div01 a:hover{
+    text-decoration:dashed black;
+}
+.div01 li{
+    float: left;
+    list-style: none;
+}
+.item1{
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.item1 a:hover{
+    text-decoration: underline green;
+}
+.div02 li{
+    list-style: none;
+    float: left;
+}
+.div02 a{
+    text-decoration: none;
+    color: rgb(12, 12, 129);
+}
+.div02 a:hover{
+    text-decoration: overline green;
+}
+.div02 img{
+    width: 300px;
+    padding-left: 20px;
+}
+.div02 h3{
+    padding-left: 40px;
+}
+.item2 img{
+    height: 280px;
+}
+.item3 img{
+    height: 280px;
+}
+.div03{
+    padding-left: 40px;
+}
+.div03 li{
+    list-style: none;;
+}
+.div04{
+    background-color: black;
+    height: 300px;
+}
+.div04 h1{
+    color: aliceblue;
+    padding-top: 8px;
+}
+.div04 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.div04 a:hover{
+    text-decoration:dashed black;
+}
+.div04 li{
+    float: left;
+    list-style: none;
+}
+.item04 h4{
+    color: beige;
+    padding-right: 20px;
+    
+}
+.item04{
+    padding-left: 90px;
+    padding-top: 10px;
+}
+.item05{
+    color: white;
+    padding-top: 90px;
+
+}
+.item05 li{
+    list-style: none;
+}
+.item04 li{
+    list-style: none;
+}
