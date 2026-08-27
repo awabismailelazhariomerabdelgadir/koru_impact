@@ -92,6 +92,7 @@ body {
 /* Footer Section */
 .footer-bg {
     background-color: black;
+    hight: 100%;
     color: white;
     padding: 30px 0;
 }
