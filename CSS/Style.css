@@ -1,4 +1,9 @@
-/* Base Layout & Header */
+/* General Typography & Universal Reset */
+body {
+    overflow-x: hidden;
+}
+
+/* Header & Mobile Navbar */
 .header-bg {
     background-image: url('../img/Koru_-2400px-06-crop.jpg');
     background-repeat: no-repeat;
@@ -10,6 +15,7 @@
 .header-bg h1 {
     color: aliceblue;
     margin: 0;
+    font-size: clamp(1.4rem, 4vw, 2rem);
 }
 
 .header-bg a {
@@ -17,28 +23,30 @@
     color: aliceblue;
 }
 
-.header-bg a:hover {
-    text-decoration: underline green;
-}
-
-/* Navbar Customization */
 .nav-link-custom h5 {
     color: aliceblue;
     margin: 0;
+    font-size: 1.1rem;
 }
 
 .nav-link-custom:hover h5 {
     text-decoration: underline green;
 }
 
+/* Navbar Toggle Style */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
 /* Card Sections */
 .card {
     height: 100%;
-    border: 1px solid #deae0e00;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s ease-in-out;
 }
 
 .card-body img {
-    max-height: 280px;
+    max-height: 200px;
     object-fit: contain;
     width: 100%;
 }
@@ -48,44 +56,49 @@
     color: rgb(12, 12, 129);
 }
 
-.card-footer a:hover {
-    text-decoration: overline green;
+.card-footer h3 {
+    font-size: 1.25rem;
+    margin: 0;
 }
 
-/* Carousel */
+/* Carousel Adjustments for Mobile */
 .carousel-inner img {
+    height: 50vh;
+    min-height: 250px;
     max-height: 500px;
     object-fit: cover;
     width: 100%;
 }
 
-/* Services & Contacts Section */
+/* Services & Contact Page Text */
 .div05 {
     color: rgb(27, 27, 133);
 }
 
 .div05 img {
-    height: 40px;
+    height: 35px;
     width: auto;
 }
 
 .item07 {
     text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 .item07 span {
     color: rgb(61, 156, 32);
 }
 
-/* Footer */
+/* Footer Section */
 .footer-bg {
     background-color: black;
     color: white;
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .footer-bg h1 {
     color: aliceblue;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
 }
 
 .footer-bg a {
@@ -93,12 +106,22 @@
     color: aliceblue;
 }
 
-.footer-bg a:hover {
-    text-decoration: underline green;
-}
-
 .social-icons img {
     height: 40px;
     width: 40px;
     object-fit: contain;
+}
+
+/* Media Queries for Phone Screens */
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+    
+    .card-footer h3 {
+        font-size: 1.1rem;
+    }
 }
