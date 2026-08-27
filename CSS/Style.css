@@ -125,29 +125,32 @@ body {
         font-size: 1.1rem;
     }
 }
-html {
+/* Base Layout Setup */
+html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
-/* Forces main contents to grow and fill empty vertical space */
+/* Ensure the main page content expands to fill available space */
+main, 
 .container, 
 .container-fluid:not(.footer-bg) {
-    flex-shrink: 0;
+    flex: 1 0 auto;
 }
 
+/* Fix footer positioning at the bottom */
 .footer-bg {
-    margin-top: auto !important;
+    flex-shrink: 0;
     background-color: #000000;
     color: #ffffff;
     padding: 30px 0;
-    width: 100%;
+    margin-top: auto;
 }
