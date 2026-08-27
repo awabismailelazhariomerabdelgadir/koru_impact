@@ -125,3 +125,24 @@ body {
         font-size: 1.1rem;
     }
 }
+/* Ensure the html and body take up the full screen height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Set body to flexbox layout column orientation */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Push the footer to the bottom of the viewport */
+.footer-bg {
+    margin-top: auto;
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+}
