@@ -172,3 +172,7 @@ body {
         background-color: #000000 !important;
     }
 }
+@media (max-width: 767.98px) {
+    .container.my-4 { margin-bottom: 25px !important; }
+    .carousel-inner img { height: 42vh !important; object-fit: cover; }
+}
