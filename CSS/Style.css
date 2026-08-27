@@ -125,7 +125,7 @@ body {
         font-size: 1.1rem;
     }
 }
-/* Base Layout Setup */
+/* Universal Reset & Viewport Fix */
 html, body {
     height: 100%;
     margin: 0;
@@ -137,20 +137,29 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #ffffff;
 }
 
-/* Ensure the main page content expands to fill available space */
-main, 
+/* Make content section expand naturally */
 .container, 
 .container-fluid:not(.footer-bg) {
     flex: 1 0 auto;
 }
 
-/* Fix footer positioning at the bottom */
+/* Ensure Carousel scales responsive height */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+/* Footer Pinning & Styling */
 .footer-bg {
     flex-shrink: 0;
-    background-color: #000000;
+    background-color: #000000 !important;
     color: #ffffff;
     padding: 30px 0;
+    width: 100%;
     margin-top: auto;
 }
