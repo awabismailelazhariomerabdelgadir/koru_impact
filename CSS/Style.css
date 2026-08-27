@@ -92,7 +92,6 @@ body {
 /* Footer Section */
 .footer-bg {
     background-color: black;
-    hight: 100%;
     color: white;
     padding: 30px 0;
 }
@@ -126,24 +125,29 @@ body {
         font-size: 1.1rem;
     }
 }
-/* Ensure the html and body take up the full screen height */
-html, body {
+html {
     height: 100%;
-    margin: 0;
 }
 
-/* Set body to flexbox layout column orientation */
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
-/* Push the footer to the bottom of the viewport */
+/* Forces main contents to grow and fill empty vertical space */
+.container, 
+.container-fluid:not(.footer-bg) {
+    flex-shrink: 0;
+}
+
 .footer-bg {
-    margin-top: auto;
-    background-color: black;
-    color: white;
+    margin-top: auto !important;
+    background-color: #000000;
+    color: #ffffff;
     padding: 30px 0;
+    width: 100%;
 }
