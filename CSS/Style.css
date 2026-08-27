@@ -125,54 +125,7 @@ body {
         font-size: 1.1rem;
     }
 }
-/* Universal Reset & Viewport Fix */
-/* Mobile-Only Fix for Equal Spacing & Black Footer Alignment */
-@media (max-width: 767.98px) {
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: #000000 !important;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    /* Expands content section to fill mobile screen height */
-    .white-section-bg {
-        background-color: #ffffff !important;
-        flex: 1 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly !important;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    /* Ensure card section takes its natural share of equal space */
-    .white-section-bg > .container {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-
-    /* Responsive carousel height on mobile */
-    .carousel-inner img {
-        height: 30vh !important;
-        min-height: 200px;
-        object-fit: cover;
-    }
-
-    /* Pin footer seamlessly to bottom without gap */
-    .footer-bg {
-        flex-shrink: 0;
-        margin-top: auto !important;
-        background-color: #000000 !important;
-    }
-}
-@media (max-width: 767.98px) {
-    .container.my-4 { margin-bottom: 25px !important; }
-    .carousel-inner img { height: 42vh !important; object-fit: cover; }
+.carousel-inner img {
+    height: 45vh !important;
+    object-fit: cover !important;
 }
