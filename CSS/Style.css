@@ -163,3 +163,7 @@ body {
     width: 100%;
     margin-top: auto;
 }
+.carousel-inner img {
+    height: 45vh !important;
+    object-fit: cover !important;
+}
