@@ -167,3 +167,6 @@ body {
     height: 45vh !important;
     object-fit: cover !important;
 }
+.container.my-4 {
+    margin-bottom: 80px !important;
+}
