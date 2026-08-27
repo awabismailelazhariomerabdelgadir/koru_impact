@@ -1,96 +1,104 @@
-.div01{
+/* Base Layout & Header */
+.header-bg {
+    background-image: url('../img/Koru_-2400px-06-crop.jpg');
     background-repeat: no-repeat;
-    background-image: url(../img/Koru_-2400px-06-crop.jpg);
-    height: 80px;
+    background-size: cover;
+    background-position: center;
+    min-height: 80px;
 }
-.div01 h1{
+
+.header-bg h1 {
     color: aliceblue;
-    padding-top: 8px;
+    margin: 0;
 }
-.div01 a{
+
+.header-bg a {
     text-decoration: none;
     color: aliceblue;
 }
-.div01 a:hover{
-    text-decoration:dashed black;
-}
-.div01 li{
-    float: left;
-    list-style: none;
-}
-.item1{
-    padding-left: 40px;
-    padding-top: 20px;
-}
-.item1 a:hover{
+
+.header-bg a:hover {
     text-decoration: underline green;
 }
-.div02 li{
-    list-style: none;
-    float: left;
+
+/* Navbar Customization */
+.nav-link-custom h5 {
+    color: aliceblue;
+    margin: 0;
 }
-.div02 a{
+
+.nav-link-custom:hover h5 {
+    text-decoration: underline green;
+}
+
+/* Card Sections */
+.card {
+    height: 100%;
+    border: 1px solid #deae0e00;
+}
+
+.card-body img {
+    max-height: 280px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.card-footer a {
     text-decoration: none;
     color: rgb(12, 12, 129);
 }
-.div02 a:hover{
+
+.card-footer a:hover {
     text-decoration: overline green;
 }
-.div02 img{
-    width: 300px;
-    padding-left: 20px;
+
+/* Carousel */
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
 }
-.div02 h3{
-    padding-left: 40px;
+
+/* Services & Contacts Section */
+.div05 {
+    color: rgb(27, 27, 133);
 }
-.item2 img{
-    height: 280px;
+
+.div05 img {
+    height: 40px;
+    width: auto;
 }
-.item3 img{
-    height: 280px;
+
+.item07 {
+    text-align: center;
 }
-.div03{
-    padding-left: 40px;
+
+.item07 span {
+    color: rgb(61, 156, 32);
 }
-.div03 li{
-    list-style: none;;
-}
-.div04{
+
+/* Footer */
+.footer-bg {
     background-color: black;
-    height: 300px;
+    color: white;
+    padding: 40px 0;
 }
-.div04 h1{
+
+.footer-bg h1 {
     color: aliceblue;
-    padding-top: 8px;
 }
-.div04 a{
+
+.footer-bg a {
     text-decoration: none;
     color: aliceblue;
 }
-.div04 a:hover{
-    text-decoration:dashed black;
-}
-.div04 li{
-    float: left;
-    list-style: none;
-}
-.item04 h4{
-    color: beige;
-    padding-right: 20px;
-    
-}
-.item04{
-    padding-left: 90px;
-    padding-top: 10px;
-}
-.item05{
-    color: white;
-    padding-top: 90px;
 
+.footer-bg a:hover {
+    text-decoration: underline green;
 }
-.item05 li{
-    list-style: none;
-}
-.item04 li{
-    list-style: none;
+
+.social-icons img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
 }
